@@ -50,7 +50,7 @@ document.querySelector("#bottom").addEventListener("click", (details)=>{
         scoreIncrease();
         hit();
         buble();
-    }if(hit1 != clicked){
+    }else if(hit1 != clicked){
         console.log("else part");
         document.querySelector("#bottom").removeEventListener("click", ()=>{}, true);
         document.querySelector(".alert").classList.add("activ");
